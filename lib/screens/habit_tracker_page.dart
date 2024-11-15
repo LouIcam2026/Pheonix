@@ -1,3 +1,9 @@
+// screens/habit_tracker_page.dart
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../providers/habit_tracker_provider.dart';
+import 'habit_progress_page.dart';
+
 class HabitTrackerPage extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
 
@@ -75,7 +81,7 @@ class HabitTrackerPage extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.green,
                               padding: EdgeInsets.symmetric(vertical: 12),
-                              foregroundColor: Colors.white, // Utilisation de foregroundColor au lieu de primary
+                              foregroundColor: Colors.white,
                             ),
                           ),
                         ],
